@@ -110,7 +110,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" strokeWidth={1.5} />
-                <span className="font-body text-sm font-light text-foreground">benita@gmail.com.com.br</span>
+                <span className="font-body text-sm font-light text-foreground">benita@gmail.com.br</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" strokeWidth={1.5} />
