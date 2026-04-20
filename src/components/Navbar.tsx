@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logoClinica from "@/assets/logo-clinica.png";
 
 const navLinks = [
 
@@ -33,17 +34,8 @@ const Navbar = () => {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Logo */}
-        <a href="#inicio" className="flex items-center gap-1">
-          <span className="font-display text-2xl font-light tracking-[0.3em] text-foreground">
-            BEN
-          </span>
-          <span className="relative font-display text-2xl font-light tracking-[0.3em] text-foreground">
-            I
-            <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-primary text-xs">🌿</span>
-          </span>
-          <span className="font-display text-2xl font-light tracking-[0.3em] text-foreground">
-            TÁ
-          </span>
+        <a href="#inicio" className="flex items-center">
+          <img src={logoClinica} alt="Benitá Clínica" className="h-10" />
         </a>
 
         {/* Desktop Links */}
