@@ -20,7 +20,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contato" className="section-padding bg-background" ref={ref}>
+    <section
+      id="contato"
+      className="section-padding bg-secondary"
+      ref={ref}
+    >
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 text-center">
           <h2 className="font-display text-3xl font-light text-foreground md:text-4xl">
