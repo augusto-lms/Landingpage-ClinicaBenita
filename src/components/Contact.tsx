@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, MapPin, MessageCircle, X } from "lucide-react";
+import { MapPin, MessageCircle, X } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
 import { buildWhatsAppUrl, getWhatsAppNumberBySpecialty, whatsappGroups } from "@/lib/whatsapp-routing";
 
@@ -23,7 +23,6 @@ const Contact = () => {
     const formData = new FormData(form);
     const name = String(formData.get("name") ?? "").trim();
     const phone = String(formData.get("phone") ?? "").trim();
-    const email = String(formData.get("email") ?? "").trim();
     const specialty = String(formData.get("specialty") ?? "").trim();
     const message = String(formData.get("message") ?? "").trim();
     const whatsappNumber = getWhatsAppNumberBySpecialty(specialty);
@@ -32,7 +31,6 @@ const Contact = () => {
       `Olá, me chamo ${name}.`,
       `Gostaria de atendimento para ${specialty}.`,
       `Telefone: ${phone}.`,
-      `E-mail: ${email}.`,
       message ? `Mensagem: ${message}` : "Mensagem: Não informada.",
     ].join("\n");
 
@@ -75,13 +73,6 @@ const Contact = () => {
               type="tel"
               name="phone"
               placeholder="Telefone"
-              required
-              className="w-full rounded-lg border border-border bg-card px-4 py-3 font-body text-sm font-light text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="E-mail"
               required
               className="w-full rounded-lg border border-border bg-card px-4 py-3 font-body text-sm font-light text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             />
@@ -133,15 +124,6 @@ const Contact = () => {
 
             {/* Contact Info */}
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-primary" strokeWidth={1.5} />
-                <a
-                  href="mailto:benitaparticipacoes@gmail.com"
-                  className="font-body text-sm font-light text-foreground transition-colors hover:text-primary-dark"
-                >
-                  benitaparticipacoes@gmail.com
-                </a>
-              </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" strokeWidth={1.5} />
                 <span className="font-body text-sm font-light text-foreground">Av. João Alves do Nascimento, 685, Patrocínio-MG</span>
