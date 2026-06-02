@@ -2,8 +2,8 @@ export const specialtyPhoneMap = {
   Pediatria: "5534997078462",
   "Saúde da Família": "5534997078462",
   "Medicina Esportiva": "5534997078462",
-  Cardiologia: "553491180254",
-  Psiquiatria: "553491180254",
+  Cardiologia: "5534997345631",
+  Psiquiatria: "5534997345631",
   Geriatria: "5534987197026",
   Angiologia: "5534999247511",
   "Cirurgia Vascular": "5534999247511",
@@ -21,8 +21,8 @@ export const whatsappGroups = [
   {
     id: "grupo-2",
     label: "Cardiologia / Psiquiatria",
-    whatsapp: "553491180254",
-    displayPhone: "34 99118-0254",
+    whatsapp: "5534997345631",
+    displayPhone: "34 99734-5631",
     specialties: ["Cardiologia", "Psiquiatria"],
   },
   {
