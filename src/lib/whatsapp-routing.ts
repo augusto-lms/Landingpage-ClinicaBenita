@@ -3,8 +3,7 @@ export const specialtyPhoneMap = {
   "Saúde da Família": "5534997078462",
   "Medicina Esportiva": "5534997078462",
   Cardiologia: "553491180254",
-  Ecocardiografia: "553491180254",
-  "Saúde Mental": "553491180254",
+  Psiquiatria: "553491180254",
   Geriatria: "5534987197026",
   Angiologia: "5534999247511",
   "Cirurgia Vascular": "5534999247511",
@@ -21,10 +20,10 @@ export const whatsappGroups = [
   },
   {
     id: "grupo-2",
-    label: "Cardiologia / Ecocardiografia / Saúde Mental",
+    label: "Cardiologia / Psiquiatria",
     whatsapp: "553491180254",
     displayPhone: "34 99118-0254",
-    specialties: ["Cardiologia", "Ecocardiografia", "Saúde Mental"],
+    specialties: ["Cardiologia", "Psiquiatria"],
   },
   {
     id: "grupo-3",

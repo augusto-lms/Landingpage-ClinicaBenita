@@ -35,7 +35,13 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8 md:grid md:grid-cols-[1fr_auto_1fr]">
         {/* Logo — colada à esquerda */}
         <a href="#inicio" className="flex items-center justify-self-start">
-          <img src={logoClinica} alt="Benitá Clínica" className="h-10" />
+          <img
+            src={logoClinica}
+            alt="Benitá Clínica"
+            className={`h-10 transition-[filter] duration-300 ${
+              scrolled ? "" : "drop-shadow-[0_1px_4px_rgba(0,0,0,0.55)]"
+            }`}
+          />
         </a>
 
         {/* Desktop Links — centralizados */}
