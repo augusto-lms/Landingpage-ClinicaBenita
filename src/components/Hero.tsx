@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImg from "@/assets/hero-clinic.jpg";
+import heroImg from "@/assets/reception.png";
 
 const Hero = () => {
   return (
@@ -7,13 +7,13 @@ const Hero = () => {
       {/* Background Image */}
       <img
         src={heroImg}
-        alt="Interior moderno da Clínica Benitá"
+        alt="Recepção da Clínica Benitá"
         className="absolute inset-0 h-full w-full object-cover"
         loading="eager"
       />
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-primary/20" />
-      <div className="absolute inset-0 bg-foreground/30" />
+      {/* Overlay — gradiente mais escuro no topo (logo/menu) e na base (botões) para garantir contraste */}
+      <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/25 to-foreground/55" />
+      <div className="absolute inset-0 bg-primary/15" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">

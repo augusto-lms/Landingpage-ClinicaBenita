@@ -32,34 +32,40 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        {/* Logo */}
-        <a href="#inicio" className="flex items-center">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8 md:grid md:grid-cols-[1fr_auto_1fr]">
+        {/* Logo — colada à esquerda */}
+        <a href="#inicio" className="flex items-center justify-self-start">
           <img src={logoClinica} alt="Benitá Clínica" className="h-10" />
         </a>
 
-        {/* Desktop Links */}
-        <div className="hidden items-center gap-8 md:flex">
+        {/* Desktop Links — centralizados */}
+        <div className="hidden items-center gap-8 md:flex md:justify-self-center">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="font-body text-sm font-light tracking-wide text-foreground/70 transition-colors hover:text-foreground"
+              className={`font-body text-sm font-light tracking-wide transition-colors ${
+                scrolled
+                  ? "text-foreground/70 hover:text-foreground"
+                  : "text-white/85 hover:text-white"
+              }`}
             >
               {link.label}
             </a>
           ))}
-          <a
-            href="#contato"
-            className="rounded-full bg-primary px-6 py-2.5 font-body text-sm font-medium text-primary-foreground transition-all hover:bg-primary-dark"
-          >
-            Agendar Consulta
-          </a>
         </div>
+
+        {/* CTA — à direita */}
+        <a
+          href="#contato"
+          className="hidden rounded-full bg-primary px-6 py-2.5 font-body text-sm font-medium text-primary-foreground transition-all hover:bg-primary-dark md:inline-block md:justify-self-end"
+        >
+          Agendar Consulta
+        </a>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-foreground"
+          className={`md:hidden transition-colors ${scrolled ? "text-foreground" : "text-white"}`}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu"
         >

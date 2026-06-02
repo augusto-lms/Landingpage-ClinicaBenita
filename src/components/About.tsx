@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import aboutImg from "@/assets/about-clinic.jpg";
+import aboutImg from "@/assets/facade.png";
 
 const About = () => {
   const ref = useRef(null);
@@ -40,7 +40,7 @@ const About = () => {
         >
           <img
             src={aboutImg}
-            alt="Médica atendendo pacientes na Clínica Benitá"
+            alt="Fachada da Clínica Benitá"
             className="h-full w-full object-cover"
             loading="lazy"
           />

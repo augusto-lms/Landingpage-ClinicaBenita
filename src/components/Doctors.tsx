@@ -1,14 +1,27 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import userPhoto from "@/assets/user.png";
+import drAryBrito from "@/assets/dr-ary-brito.jpeg";
+import drFlavioSgarbi from "@/assets/dr-flavio-sgarbi.jpeg";
+import drGustavoGerolin from "@/assets/dr-gustavo-gerolin.jpeg";
+import drMarceloBorges from "@/assets/dr-marcelo-borges.jpeg";
+import drMarcusFabianni from "@/assets/dr-marcus-fabianni.jpeg";
+import drRogerioQueiroz from "@/assets/dr-rogerio-queiroz.jpeg";
+import draCarolineMendes from "@/assets/dra-caroline-mendes.jpeg";
+import draCassianaDuarte from "@/assets/dra-cassiana-duarte.jpeg";
+import draPaulaKaroline from "@/assets/dra-paula-karoline.jpeg";
+import draTatianeChagas from "@/assets/dra-tatiane-chagas.jpeg";
 
 const doctors = [
-  { name: "Doutor 1", specialty: "Pediatria", crm: "CRM 1234", photo: userPhoto, bio: "Dedicada à saúde infantil com mais de 10 anos de experiência." },
-  { name: "Doutor 2", specialty: "Cardiologia", crm: "CRM 1234", photo: userPhoto, bio: "Especialista em diagnóstico e prevenção cardiovascular." },
-  { name: "Doutor 3", specialty: "Ginecologia", crm: "CRM 1234", photo: userPhoto, bio: "Cuidando da saúde da mulher com empatia e excelência." },
-  { name: "Doutor 4", specialty: "Saúde Mental", crm: "CRM 1234", photo: userPhoto, bio: "Psiquiatra com abordagem humanizada e integrativa." },
-  { name: "Doutor 5", specialty: "Geriatria", crm: "CRM 1234", photo: userPhoto, bio: "Atenção especializada e carinhosa à saúde do idoso." },
-  { name: "Doutor 6", specialty: "Medicina Esportiva", crm: "CRM 1234", photo: userPhoto, bio: "Performance e saúde para atletas de todas as modalidades." },
+  { name: "Dr. Ary Brito", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: drAryBrito, bio: "" },
+  { name: "Dr. Flávio Sgarbi", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: drFlavioSgarbi, bio: "" },
+  { name: "Dr. Gustavo Gerolin", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: drGustavoGerolin, bio: "" },
+  { name: "Dr. Marcelo Borges", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: drMarceloBorges, bio: "" },
+  { name: "Dr. Marcus Fabianni", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: drMarcusFabianni, bio: "" },
+  { name: "Dr. Rogério Queiroz", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: drRogerioQueiroz, bio: "" },
+  { name: "Dra. Caroline Mendes", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: draCarolineMendes, bio: "" },
+  { name: "Dra. Cassiana Duarte", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: draCassianaDuarte, bio: "" },
+  { name: "Dra. Paula Karoline", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: draPaulaKaroline, bio: "" },
+  { name: "Dra. Tatiane Chagas", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: draTatianeChagas, bio: "" },
 ];
 
 const Doctors = () => {
@@ -44,7 +57,9 @@ const Doctors = () => {
               <h3 className="font-display text-xl font-normal text-foreground">{doc.name}</h3>
               <p className="mt-1 font-body text-sm font-medium text-primary">{doc.specialty}</p>
               <p className="mt-0.5 font-body text-xs font-light text-muted-foreground">{doc.crm}</p>
-              <p className="mt-3 font-body text-sm font-light text-muted-foreground">{doc.bio}</p>
+              {doc.bio && (
+                <p className="mt-3 font-body text-sm font-light text-muted-foreground">{doc.bio}</p>
+              )}
             </motion.div>
           ))}
         </div>
