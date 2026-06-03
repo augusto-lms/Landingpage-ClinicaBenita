@@ -38,8 +38,10 @@ const Navbar = () => {
           <img
             src={logoClinica}
             alt="Benitá Clínica"
-            className={`h-10 transition-[filter] duration-300 ${
-              scrolled ? "" : "drop-shadow-[0_1px_4px_rgba(0,0,0,0.55)]"
+            className={`h-10 transition-all duration-300 ${
+              scrolled
+                ? ""
+                : "brightness-0 invert drop-shadow-[0_1px_4px_rgba(0,0,0,0.45)]"
             }`}
           />
         </a>
