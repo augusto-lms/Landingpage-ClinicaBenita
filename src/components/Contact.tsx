@@ -118,7 +118,7 @@ const Contact = () => {
               style={{
                 border: 0,
                 borderRadius: "12px",
-                width: "132%",
+                width: "100%",
                 height: "450px",
               }}
               allowFullScreen
