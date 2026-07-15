@@ -65,7 +65,7 @@ const Footer = () => {
 
         <div className="mx-auto mt-12 max-w-6xl border-t border-primary-foreground/10 pt-6">
           <p className="font-body text-xs font-light text-primary-foreground/40 text-center">
-            © 2025 Clínica Benitá. Todos os direitos reservados.
+            © {new Date().getFullYear()} Clínica Benitá. Todos os direitos reservados.
           </p>
         </div>
       </footer>

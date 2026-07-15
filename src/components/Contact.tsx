@@ -6,7 +6,7 @@ import { buildWhatsAppUrl, getWhatsAppNumberBySpecialty, whatsappGroups } from "
 
 const specialtiesOptions = [
   "Pediatria",
-  "Saude da Familia",
+  "Saúde da Família",
   "Medicina Esportiva",
   "Cardiologia",
   "Psiquiatria",
@@ -130,7 +130,7 @@ const Contact = () => {
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" strokeWidth={1.5} />
                 <span className="font-body text-sm font-light text-foreground">
-                  Av. Joao Alves do Nascimento, 685, Patrocinio-MG
+                  Av. João Alves do Nascimento, 685, Patrocínio-MG
                 </span>
               </div>
 
@@ -209,7 +209,7 @@ const Contact = () => {
                         Com qual especialidade deseja falar?
                       </h2>
                       <p className="mt-3 font-body text-sm font-light leading-relaxed text-muted-foreground">
-                        Escolha a area de atendimento para ser encaminhado ao numero correto da clinica.
+                        Escolha a área de atendimento para ser encaminhado ao número correto da clínica.
                       </p>
                     </div>
 

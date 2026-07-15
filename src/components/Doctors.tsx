@@ -2,25 +2,21 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import drAryBrito from "@/assets/dr-ary-brito.jpeg";
 import drFlavioSgarbi from "@/assets/dr-flavio-sgarbi.jpeg";
-import drGustavoGerolin from "@/assets/dr-gustavo-gerolin.jpeg";
 import drMarceloBorges from "@/assets/dr-marcelo-borges.jpeg";
 import drMarcusFabianni from "@/assets/dr-marcus-fabianni.jpeg";
 import drRogerioQueiroz from "@/assets/dr-rogerio-queiroz.jpeg";
 import draCarolineMendes from "@/assets/dra-caroline-mendes.jpeg";
 import draCassianaDuarte from "@/assets/dra-cassiana-duarte.jpeg";
-import draPaulaKaroline from "@/assets/dra-paula-karoline.jpeg";
 import draTatianeChagas from "@/assets/dra-tatiane-chagas.jpeg";
 
 const doctors = [
   { name: "Dr. Ary Brito", specialty: "Angiologia/Cirurgia Vascular", crm: "CRM 44112/MG", photo: drAryBrito, bio: "" },
   { name: "Dr. Flávio Sgarbi", specialty: "Cardiologia", crm: "CRM 49043/MG", photo: drFlavioSgarbi, bio: "" },
-  { name: "Dr. Gustavo Gerolin", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: drGustavoGerolin, bio: "" },
   { name: "Dr. Marcelo Borges", specialty: "Psiquiatria", crm: "CRM 62026/MG", photo: drMarceloBorges, bio: "" },
   { name: "Dr. Marcus Fabianni", specialty: "Geriatria", crm: "CRM 40480/MG", photo: drMarcusFabianni, bio: "" },
   { name: "Dr. Rogério Queiroz", specialty: "Cardiologia", crm: "CRM 41810/MG", photo: drRogerioQueiroz, bio: "" },
   { name: "Dra. Caroline Mendes", specialty: "Saúde da Família/Medicina Esportiva", crm: "CRM 64457/MG", photo: draCarolineMendes, bio: "" },
   { name: "Dra. Cassiana Duarte", specialty: "Pediatria", crm: "CRM 41998/MG", photo: draCassianaDuarte, bio: "" },
-  { name: "Dra. Paula Karoline", specialty: "Especialidade a confirmar", crm: "CRM a confirmar", photo: draPaulaKaroline, bio: "" },
   { name: "Dra. Tatiane Chagas", specialty: "Ginecologia", crm: "CRM 56690/MG", photo: draTatianeChagas, bio: "" },
 ];
 
