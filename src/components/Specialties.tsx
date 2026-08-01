@@ -2,7 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import {
   Baby, Home, Dumbbell, HeartPulse, Heart, Brain,
-  PersonStanding, Droplets, Scissors, Flower2,
+  PersonStanding, Droplets, Scissors, Flower2, Sparkles,
 } from "lucide-react";
 
 const specialties = [
@@ -16,6 +16,7 @@ const specialties = [
   { icon: Droplets, name: "Angiologia", desc: "Tratamento de doenças vasculares e circulatórias" },
   { icon: Scissors, name: "Cirurgia Vascular", desc: "Procedimentos cirúrgicos vasculares com segurança" },
   { icon: Flower2, name: "Ginecologia", desc: "Saúde da mulher em todas as fases da vida" },
+  { icon: Sparkles, name: "Estética e Beleza", desc: "Cuidados voltados à estética, beleza e bem-estar" },
 ];
 
 const Specialties = () => {
