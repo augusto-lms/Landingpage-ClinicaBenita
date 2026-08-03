@@ -18,7 +18,7 @@ const doctors = [
   { name: "Dr. Rogério Queiroz", specialty: "Cardiologia", crm: "CRM 41810/MG", photo: drRogerioQueiroz, bio: "" },
   { name: "Dra. Caroline Mendes", specialty: "Saúde da Família/Medicina Esportiva", crm: "CRM 64457/MG", photo: draCarolineMendes, bio: "" },
   { name: "Dra. Cassiana Duarte", specialty: "Pediatria", crm: "CRM 41998/MG", photo: draCassianaDuarte, bio: "" },
-  { name: "Dra. Marcela Jacinto", specialty: "Estética e Beleza", crm: "CRO/MG 48.513", photo: draMarcelaJacinto, bio: "" },
+  { name: "Dra. Marcela Jacinto", specialty: "Cirurgiã-dentista — Especialista em Harmonização Orofacial (HOF)", crm: "CRO/MG 48.513", photo: draMarcelaJacinto, bio: "" },
   { name: "Dra. Tatiane Chagas", specialty: "Ginecologia", crm: "CRM 56690/MG", photo: draTatianeChagas, bio: "" },
 ];
 

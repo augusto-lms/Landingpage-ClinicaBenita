@@ -16,7 +16,7 @@ const specialties = [
   { icon: Droplets, name: "Angiologia", desc: "Tratamento de doenças vasculares e circulatórias" },
   { icon: Scissors, name: "Cirurgia Vascular", desc: "Procedimentos cirúrgicos vasculares com segurança" },
   { icon: Flower2, name: "Ginecologia", desc: "Saúde da mulher em todas as fases da vida" },
-  { icon: Sparkles, name: "Estética e Beleza", desc: "Cuidados voltados à estética, beleza e bem-estar" },
+  { icon: Sparkles, name: "Harmonização Orofacial (HOF)", desc: "Procedimentos voltados à estética e ao equilíbrio facial" },
 ];
 
 const Specialties = () => {
