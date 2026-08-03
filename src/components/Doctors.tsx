@@ -7,6 +7,7 @@ import drMarcusFabianni from "@/assets/dr-marcus-fabianni.jpeg";
 import drRogerioQueiroz from "@/assets/dr-rogerio-queiroz.jpeg";
 import draCarolineMendes from "@/assets/dra-caroline-mendes.jpeg";
 import draCassianaDuarte from "@/assets/dra-cassiana-duarte.jpeg";
+import draMarcelaJacinto from "@/assets/dra-marcela.jpeg";
 import draTatianeChagas from "@/assets/dra-tatiane-chagas.jpeg";
 
 const doctors = [
@@ -17,6 +18,7 @@ const doctors = [
   { name: "Dr. Rogério Queiroz", specialty: "Cardiologia", crm: "CRM 41810/MG", photo: drRogerioQueiroz, bio: "" },
   { name: "Dra. Caroline Mendes", specialty: "Saúde da Família/Medicina Esportiva", crm: "CRM 64457/MG", photo: draCarolineMendes, bio: "" },
   { name: "Dra. Cassiana Duarte", specialty: "Pediatria", crm: "CRM 41998/MG", photo: draCassianaDuarte, bio: "" },
+  { name: "Dra. Marcela Jacinto", specialty: "Estética e Beleza", crm: "CRO/MG 48.513", photo: draMarcelaJacinto, bio: "" },
   { name: "Dra. Tatiane Chagas", specialty: "Ginecologia", crm: "CRM 56690/MG", photo: draTatianeChagas, bio: "" },
 ];
 
@@ -29,7 +31,7 @@ const Doctors = () => {
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 text-center">
           <h2 className="font-display text-3xl font-light text-foreground md:text-4xl">
-            Nossos Médicos
+            Nossos Profissionais
           </h2>
           <p className="mt-3 font-body text-base font-light text-muted-foreground">
             Profissionais dedicados ao seu bem-estar
