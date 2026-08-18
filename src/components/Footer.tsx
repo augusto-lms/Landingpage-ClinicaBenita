@@ -64,9 +64,17 @@ const Footer = () => {
         </div>
 
         <div className="mx-auto mt-12 max-w-6xl border-t border-primary-foreground/10 pt-6">
-          <p className="font-body text-xs font-light text-primary-foreground/40 text-center">
-            © {new Date().getFullYear()} Clínica Benitá. Todos os direitos reservados.
-          </p>
+          <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
+            <p className="font-body text-xs font-light text-primary-foreground/40">
+              © {new Date().getFullYear()} Clínica Benitá. Todos os direitos reservados.
+            </p>
+            <a
+              href="/politica-de-privacidade"
+              className="font-body text-xs font-light text-primary-foreground/60 transition-colors hover:text-primary-foreground"
+            >
+              Política de Privacidade
+            </a>
+          </div>
         </div>
       </footer>
 

@@ -11,7 +11,7 @@ const specialties = [
   { icon: Dumbbell, name: "Medicina Esportiva", desc: "Desempenho e saúde para atletas e praticantes" },
   { icon: HeartPulse, name: "Cardiologia", desc: "Diagnóstico e tratamento das doenças do coração" },
   { icon: Heart, name: "Ecocardiografia", desc: "Exames de imagem cardiológica de precisão" },
-  { icon: Brain, name: "Saúde Mental", desc: "Apoio emocional e psiquiátrico com acolhimento" },
+  { icon: Brain, name: "Psiquiatria", desc: "Cuidado em saúde mental com escuta e acolhimento" },
   { icon: PersonStanding, name: "Geriatria", desc: "Atenção especializada à saúde do idoso" },
   { icon: Droplets, name: "Angiologia", desc: "Tratamento de doenças vasculares e circulatórias" },
   { icon: Scissors, name: "Cirurgia Vascular", desc: "Procedimentos cirúrgicos vasculares com segurança" },

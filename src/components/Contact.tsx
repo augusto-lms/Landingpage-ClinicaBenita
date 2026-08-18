@@ -34,10 +34,10 @@ const Contact = () => {
     const whatsappNumber = getWhatsAppNumberBySpecialty(specialty);
 
     const whatsappMessage = [
-      `Ola, me chamo ${name}.`,
+      `Olá, me chamo ${name}.`,
       `Gostaria de atendimento para ${specialty}.`,
       `Telefone: ${phone}.`,
-      message ? `Mensagem: ${message}` : "Mensagem: Nao informada.",
+      message ? `Mensagem: ${message}` : "Mensagem: Não informada.",
     ].join("\n");
 
     setSubmitted(true);
@@ -64,46 +64,95 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="space-y-5"
           >
-            <input
-              type="text"
-              name="name"
-              placeholder="Nome"
-              required
-              className="w-full rounded-lg border border-border bg-card px-4 py-3 font-body text-sm font-light text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Telefone"
-              required
-              className="w-full rounded-lg border border-border bg-card px-4 py-3 font-body text-sm font-light text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-            />
-            <select
-              name="specialty"
-              required
-              defaultValue=""
-              className="w-full rounded-lg border border-border bg-card px-4 py-3 font-body text-sm font-light text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-            >
-              <option value="" disabled>
-                Selecione a especialidade
-              </option>
-              {specialtiesOptions.map((specialty) => (
-                <option key={specialty} value={specialty}>
-                  {specialty}
+            <div className="space-y-2">
+              <label htmlFor="contact-name" className="font-body text-sm font-medium text-foreground">
+                Nome
+              </label>
+              <input
+                id="contact-name"
+                type="text"
+                name="name"
+                autoComplete="name"
+                placeholder="Digite seu nome"
+                required
+                className="w-full rounded-lg border border-border bg-card px-4 py-3 font-body text-sm font-light text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="contact-phone" className="font-body text-sm font-medium text-foreground">
+                Telefone
+              </label>
+              <input
+                id="contact-phone"
+                type="tel"
+                name="phone"
+                autoComplete="tel"
+                inputMode="tel"
+                placeholder="(34) 99999-9999"
+                required
+                className="w-full rounded-lg border border-border bg-card px-4 py-3 font-body text-sm font-light text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="contact-specialty" className="font-body text-sm font-medium text-foreground">
+                Especialidade
+              </label>
+              <select
+                id="contact-specialty"
+                name="specialty"
+                required
+                defaultValue=""
+                className="w-full rounded-lg border border-border bg-card px-4 py-3 font-body text-sm font-light text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              >
+                <option value="" disabled>
+                  Selecione a especialidade
                 </option>
-              ))}
-            </select>
-            <textarea
-              name="message"
-              placeholder="Mensagem"
-              rows={4}
-              className="w-full resize-none rounded-lg border border-border bg-card px-4 py-3 font-body text-sm font-light text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-            />
+                {specialtiesOptions.map((specialty) => (
+                  <option key={specialty} value={specialty}>
+                    {specialty}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="contact-message" className="font-body text-sm font-medium text-foreground">
+                Mensagem <span className="font-light text-muted-foreground">(opcional)</span>
+              </label>
+              <textarea
+                id="contact-message"
+                name="message"
+                placeholder="Como podemos ajudar?"
+                rows={4}
+                className="w-full resize-none rounded-lg border border-border bg-card px-4 py-3 font-body text-sm font-light text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+            </div>
+            <label className="flex items-start gap-3 font-body text-xs font-light leading-relaxed text-muted-foreground">
+              <input
+                type="checkbox"
+                name="privacy-consent"
+                required
+                className="mt-0.5 h-4 w-4 shrink-0 accent-primary"
+              />
+              <span>
+                Concordo com o uso dos dados informados para atendimento e com seu encaminhamento pelo WhatsApp, conforme a{" "}
+                <a
+                  href="/politica-de-privacidade"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-primary underline underline-offset-2 hover:text-primary-dark"
+                >
+                  Política de Privacidade
+                </a>.
+              </span>
+            </label>
+            <p className="font-body text-xs font-light leading-relaxed text-muted-foreground">
+              Não informe diagnósticos, exames ou outros dados de saúde neste formulário.
+            </p>
             <button
               type="submit"
               className="w-full rounded-full bg-primary px-8 py-3.5 font-body text-sm font-medium text-primary-foreground transition-all hover:bg-primary-dark"
             >
-              {submitted ? "Mensagem enviada!" : "Enviar mensagem"}
+              {submitted ? "Abrindo o WhatsApp..." : "Continuar no WhatsApp"}
             </button>
           </motion.form>
 
@@ -114,6 +163,7 @@ const Contact = () => {
             className="space-y-8"
           >
             <iframe
+              title="Localização da Clínica Benitá no Google Maps"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4279.6694371651865!2d-46.986738488646786!3d-18.95008000847095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94afbbc5583f80bb%3A0x8fd8675c4e7fc7e0!2zQmVuaXTDoSBDbMOtbmljYQ!5e1!3m2!1spt-BR!2sbr!4v1773353893443!5m2!1spt-BR!2sbr"
               style={{
                 border: 0,
