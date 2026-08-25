@@ -20,8 +20,8 @@ const Index = () => {
       <Specialties />
       <ExamScheduling />
       <Doctors />
-      <InstagramFeed />
       <Contact />
+      <InstagramFeed />
       <Footer />
       <WhatsAppButton />
     </div>
