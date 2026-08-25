@@ -3,6 +3,7 @@ export const specialtyPhoneMap = {
   "Saúde da Família": "5534997078462",
   "Medicina Esportiva": "5534997078462",
   Cardiologia: "5534997345631",
+  "Agendamento de Exames": "553497345631",
   Ecocardiografia: "553497345631",
   Psiquiatria: "5534997345631",
   Geriatria: "5534987197026",
@@ -50,10 +51,10 @@ export const whatsappGroups = [
   },
   {
     id: "grupo-6",
-    label: "Ecocardiografia",
+    label: "Agendamento de Exames / Ecocardiografia",
     whatsapp: "553497345631",
     displayPhone: "34 9734-5631",
-    specialties: ["Ecocardiografia"],
+    specialties: ["Agendamento de Exames", "Ecocardiografia"],
   },
 ] as const;
 

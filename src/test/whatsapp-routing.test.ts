@@ -10,4 +10,8 @@ describe("roteamento de WhatsApp por especialidade", () => {
   it("encaminha Ecocardiografia para o número de exames", () => {
     expect(getWhatsAppNumberBySpecialty("Ecocardiografia")).toBe("553497345631");
   });
+
+  it("encaminha o agendamento geral de exames para o mesmo número", () => {
+    expect(getWhatsAppNumberBySpecialty("Agendamento de Exames")).toBe("553497345631");
+  });
 });

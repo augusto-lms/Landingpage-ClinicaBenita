@@ -8,6 +8,7 @@ const specialtiesOptions = [
   "Pediatria",
   "Saúde da Família",
   "Medicina Esportiva",
+  "Agendamento de Exames",
   "Cardiologia",
   "Ecocardiografia",
   "Psiquiatria",
