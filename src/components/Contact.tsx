@@ -9,11 +9,13 @@ const specialtiesOptions = [
   "Saúde da Família",
   "Medicina Esportiva",
   "Cardiologia",
+  "Ecocardiografia",
   "Psiquiatria",
   "Geriatria",
   "Angiologia",
   "Cirurgia Vascular",
   "Ginecologia",
+  "Harmonização Orofacial (HOF)",
 ];
 
 const Contact = () => {

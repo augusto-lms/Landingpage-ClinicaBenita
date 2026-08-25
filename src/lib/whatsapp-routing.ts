@@ -3,11 +3,13 @@ export const specialtyPhoneMap = {
   "Saúde da Família": "5534997078462",
   "Medicina Esportiva": "5534997078462",
   Cardiologia: "5534997345631",
+  Ecocardiografia: "553497345631",
   Psiquiatria: "5534997345631",
   Geriatria: "5534987197026",
   Angiologia: "5534999247511",
   "Cirurgia Vascular": "5534999247511",
   Ginecologia: "5534999247511",
+  "Harmonização Orofacial (HOF)": "553498180016",
 } as const;
 
 export const whatsappGroups = [
@@ -38,6 +40,20 @@ export const whatsappGroups = [
     whatsapp: "5534999247511",
     displayPhone: "34 99924-7511",
     specialties: ["Angiologia", "Cirurgia Vascular", "Ginecologia"],
+  },
+  {
+    id: "grupo-5",
+    label: "Harmonização Orofacial (HOF)",
+    whatsapp: "553498180016",
+    displayPhone: "34 9818-0016",
+    specialties: ["Harmonização Orofacial (HOF)"],
+  },
+  {
+    id: "grupo-6",
+    label: "Ecocardiografia",
+    whatsapp: "553497345631",
+    displayPhone: "34 9734-5631",
+    specialties: ["Ecocardiografia"],
   },
 ] as const;
 
