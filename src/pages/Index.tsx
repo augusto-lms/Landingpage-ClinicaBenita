@@ -5,7 +5,6 @@ import About from "@/components/About";
 import Specialties from "@/components/Specialties";
 import ExamScheduling from "@/components/ExamScheduling";
 import Doctors from "@/components/Doctors";
-import InstagramFeed from "@/components/InstagramFeed";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -21,7 +20,6 @@ const Index = () => {
       <ExamScheduling />
       <Doctors />
       <Contact />
-      <InstagramFeed />
       <Footer />
       <WhatsAppButton />
     </div>

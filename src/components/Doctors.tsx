@@ -2,12 +2,15 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import drAryBrito from "@/assets/dr-ary-brito.jpeg";
 import drFlavioSgarbi from "@/assets/dr-flavio-sgarbi.jpeg";
+import drGustavoGerolin from "@/assets/dr-gustavo-gerolin.jpeg";
 import drMarceloBorges from "@/assets/dr-marcelo-borges.jpeg";
 import drMarcusFabianni from "@/assets/dr-marcus-fabianni.jpeg";
 import drRogerioQueiroz from "@/assets/dr-rogerio-queiroz.jpeg";
 import draCarolineMendes from "@/assets/dra-caroline-mendes.jpeg";
 import draCassianaDuarte from "@/assets/dra-cassiana-duarte.jpeg";
 import draMarcelaJacinto from "@/assets/dra-marcela.jpeg";
+import draAmandaVieiraChagas from "@/assets/dra-amanda-vieira-chagas.jpeg";
+import draPaulaKarolinePiau from "@/assets/dra-paula-karoline-piau.jpeg";
 import draTatianeChagas from "@/assets/dra-tatiane-chagas.jpeg";
 
 const doctors = [
@@ -20,6 +23,9 @@ const doctors = [
   { name: "Dra. Cassiana Duarte", specialty: "Pediatria", crm: "CRM 41998/MG", photo: draCassianaDuarte, bio: "" },
   { name: "Dra. Marcela Jacinto", specialty: "Cirurgiã-dentista — Especialista em Harmonização Orofacial (HOF)", crm: "CRO/MG 48.513", photo: draMarcelaJacinto, bio: "" },
   { name: "Dra. Tatiane Chagas", specialty: "Ginecologia", crm: "CRM 56690/MG", photo: draTatianeChagas, bio: "" },
+  { name: "Dr. Gustavo Gerolin", specialty: "Ecocardiografia", crm: "", photo: drGustavoGerolin, bio: "" },
+  { name: "Dra. Amanda Vieira Chagas", specialty: "Ultrassonografia", crm: "", photo: draAmandaVieiraChagas, bio: "" },
+  { name: "Dra. Paula Karoline Piau", specialty: "Ultrassonografia", crm: "", photo: draPaulaKarolinePiau, bio: "" },
 ];
 
 const Doctors = () => {
@@ -54,7 +60,9 @@ const Doctors = () => {
               />
               <h3 className="font-display text-xl font-normal text-foreground">{doc.name}</h3>
               <p className="mt-1 font-body text-sm font-medium text-primary">{doc.specialty}</p>
-              <p className="mt-0.5 font-body text-xs font-light text-muted-foreground">{doc.crm}</p>
+              {doc.crm && (
+                <p className="mt-0.5 font-body text-xs font-light text-muted-foreground">{doc.crm}</p>
+              )}
               {doc.bio && (
                 <p className="mt-3 font-body text-sm font-light text-muted-foreground">{doc.bio}</p>
               )}
