@@ -26,13 +26,19 @@ const Footer = () => {
               Links Rápidos
             </h4>
             <div className="flex flex-col gap-2">
-              {["Início", "Especialidades", "Médicos", "Sobre", "Contato"].map((l) => (
+              {[
+                { label: "Início", href: "#inicio" },
+                { label: "Especialidades", href: "#especialidades" },
+                { label: "Profissionais", href: "#medicos" },
+                { label: "Sobre", href: "#sobre" },
+                { label: "Contato", href: "#contato" },
+              ].map((link) => (
                 <a
-                  key={l}
-                  href={`#${l.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}
+                  key={link.href}
+                  href={link.href}
                   className="font-body text-sm font-light text-primary-foreground/60 transition-colors hover:text-primary-foreground"
                 >
-                  {l}
+                  {link.label}
                 </a>
               ))}
             </div>
