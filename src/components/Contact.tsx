@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 import { buildWhatsAppUrl, getWhatsAppNumberBySpecialty, whatsappGroups } from "@/lib/whatsapp-routing";
 
 const specialtiesOptions = [
+  "Administração",
   "Pediatria",
   "Saúde da Família",
   "Medicina Esportiva",
@@ -221,6 +222,19 @@ const Contact = () => {
                 </svg>
                 <span className="font-body text-sm font-light text-foreground">Fale conosco via WhatsApp</span>
               </button>
+
+              <a
+                href={buildWhatsAppUrl("553499588215", "Olá! Gostaria de falar com a Administração da Clínica Benitá.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-primary transition-colors hover:text-primary-dark"
+                aria-label="Falar com a Administração pelo WhatsApp"
+              >
+                <MessageCircle className="h-5 w-5" strokeWidth={1.5} />
+                <span className="font-body text-sm font-light text-foreground">
+                  Administração: (34) 9958-8215
+                </span>
+              </a>
             </div>
 
             <AnimatePresence>

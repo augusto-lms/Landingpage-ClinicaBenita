@@ -1,4 +1,5 @@
 export const specialtyPhoneMap = {
+  Administração: "553499588215",
   Pediatria: "5534997078462",
   "Saúde da Família": "5534997078462",
   "Medicina Esportiva": "5534997078462",
@@ -15,6 +16,13 @@ export const specialtyPhoneMap = {
 } as const;
 
 export const whatsappGroups = [
+  {
+    id: "administracao",
+    label: "Administração",
+    whatsapp: "553499588215",
+    displayPhone: "34 9958-8215",
+    specialties: ["Administração"],
+  },
   {
     id: "grupo-1",
     label: "Pediatria / Saúde da Família / Medicina Esportiva",

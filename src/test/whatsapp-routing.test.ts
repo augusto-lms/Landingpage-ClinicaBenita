@@ -3,6 +3,10 @@ import { describe, expect, it } from "vitest";
 import { getWhatsAppNumberBySpecialty } from "@/lib/whatsapp-routing";
 
 describe("roteamento de WhatsApp por especialidade", () => {
+  it("encaminha assuntos administrativos para a Administração", () => {
+    expect(getWhatsAppNumberBySpecialty("Administração")).toBe("553499588215");
+  });
+
   it("encaminha Harmonização Orofacial para o número da Dra. Marcela", () => {
     expect(getWhatsAppNumberBySpecialty("Harmonização Orofacial (HOF)")).toBe("553498180016");
   });
