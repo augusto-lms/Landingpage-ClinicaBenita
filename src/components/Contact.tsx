@@ -11,6 +11,7 @@ const specialtiesOptions = [
   "Agendamento de Exames",
   "Cardiologia",
   "Ecocardiografia",
+  "Ultrassonografia",
   "Psiquiatria",
   "Geriatria",
   "Angiologia",

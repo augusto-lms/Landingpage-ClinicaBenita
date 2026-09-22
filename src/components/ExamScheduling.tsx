@@ -19,8 +19,8 @@ const ExamScheduling = () => {
           Agendamento de Exames
         </h2>
         <p className="mx-auto mt-4 max-w-lg font-body text-base font-light leading-relaxed text-muted-foreground">
-          Realize seus exames com comodidade e rapidez. Nossa equipe está pronta
-          para orientar você em todo o processo.
+          Agende exames de Ecocardiografia e Ultrassonografia com comodidade e
+          rapidez. Nossa equipe está pronta para orientar você em todo o processo.
         </p>
         <a
           href="#contato"

@@ -5,6 +5,7 @@ export const specialtyPhoneMap = {
   Cardiologia: "5534997345631",
   "Agendamento de Exames": "5534997345631",
   Ecocardiografia: "5534997345631",
+  Ultrassonografia: "5534997345631",
   Psiquiatria: "5534997345631",
   Geriatria: "5534987197026",
   Angiologia: "5534999247511",
@@ -23,10 +24,10 @@ export const whatsappGroups = [
   },
   {
     id: "grupo-2",
-    label: "Cardiologia / Psiquiatria / Ecocardiografia / Agendamento de Exames",
+    label: "Cardiologia / Psiquiatria / Exames (Ecocardiografia e Ultrassonografia)",
     whatsapp: "5534997345631",
     displayPhone: "34 99734-5631",
-    specialties: ["Cardiologia", "Psiquiatria", "Ecocardiografia", "Agendamento de Exames"],
+    specialties: ["Cardiologia", "Psiquiatria", "Ecocardiografia", "Ultrassonografia", "Agendamento de Exames"],
   },
   {
     id: "grupo-3",
